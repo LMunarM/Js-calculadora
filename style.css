@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+    
+}
+
+body{
+    background: rgb(1,11,13);
+    background: linear-gradient(288deg, rgba(1,11,13,1) 5%, rgba(55,14,97,1) 44%, rgba(54,0,87,1) 54%, rgba(66,25,112,1) 89%);
+    color: aliceblue;
+    height: 100vh;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+main{
+    background-color: rgb(33, 33, 33);
+    width: 400px;
+    height: 470px;
+    margin-top: 70px;
+    border-radius: 5%;
+    border: solid;
+    border-width: 2px;
+    box-shadow: 5px 5px 3px rgb(42, 42, 42);
+    
+ 
+   
+
+    
+}
+h1{
+    font-size: 4rem;
+    margin-left:calc(50% - 105px) ;
+}
+#screen{
+    height: 80px;
+    background-color: rgb(42, 42, 42);
+    width: 370px;
+    margin-left: calc(50% - 185px);
+    padding: auto;
+    display: flex;
+    flex-direction: column;
+
+    
+}
+#pantalla{
+    color: darkgrey;
+    font-size: 3rem;
+    margin-left: 8px;
+    margin-right: 8px;
+    display: inline-block;
+    max-height:3.1rem ;
+    overflow: hidden;
+    
+
+   
+}
+#resultado{
+    font-size: 5rem;
+    margin-left: 8px;
+    margin-top: -5px;    
+    display: inline-block;
+    max-width: 23ch ;
+    overflow: hidden;
+
+}
+
+  
+
+.buttons_container{
+    padding: auto;
+    margin: 15px;
+    background-color: rgb(42, 42, 42);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    ". . . ."
+    ". . . ."
+    ". . . ."
+    ". . . ."
+    ". equal equal equal"; 
+}
+    
+
+.boton{
+    font-size: 3.8rem;
+    color: rgb(255, 255, 255);
+    background-color: rgb(70, 69, 69);
+    width: 85px;
+    height: 4.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3px;
+    padding: auto;
+    -webkit-user-select: none;
+
+
+}
+#bequal{
+    grid-area: equal;
+    width: 270px;
+    background-color: rgb(62, 78, 62);
+
+}
+#button-delete{
+    background-color: rgb(92, 56, 63);
+}
+.operator-button{
+    background-color: rgb(54, 66, 82);
+}
+
+
+
+.boton:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+.boton:active{
+    opacity: 0.3;
+}
+#bclear{
+    background-color: rgb(86, 40, 40);
+}
